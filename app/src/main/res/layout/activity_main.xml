@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_1"
+            android:text="重新显示"
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_2"
+            android:text="添加划区清扫"
+
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_3"
+            android:text="添加虚拟墙"
+
+            ></Button>
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_4"
+        android:text="划分房间"
+
+        ></Button>
+
+    <com.blackvision.bvmapmodule.zoom.ZoomLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:max_zoom="3.0"
+        app:min_zoom="1"
+        app:double_click_zoom="2.0"
+        android:id="@+id/zoomlayout"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_mapview"
+
+                ></ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_route"
+                ></ImageView>
+
+            <com.blackvision.bvmapmodule.room.RoomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/roomview"
+                ></com.blackvision.bvmapmodule.room.RoomView>
+            <com.blackvision.bvmapmodule.area.AreaRedLayout
+                android:id="@+id/area_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.blackvision.bvmapmodule.area.AreaRedLayout>
+            <com.blackvision.bvmapmodule.area.AreaGreenLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/area_green_layout"
+                ></com.blackvision.bvmapmodule.area.AreaGreenLayout>
+
+            <com.blackvision.bvmapmodule.map.MapIconsLayout
+                android:id="@+id/icons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.blackvision.bvmapmodule.map.MapIconsLayout>
+
+
+
+        </RelativeLayout>
+
+    </com.blackvision.bvmapmodule.zoom.ZoomLayout>
+
+
+</LinearLayout>
