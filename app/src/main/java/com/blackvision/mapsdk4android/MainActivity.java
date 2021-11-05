@@ -2,6 +2,7 @@ package com.blackvision.mapsdk4android;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -139,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onRoomLine(int x1, int y1, int x2, int y2) {
-
+                Log.d("TAG", "onRoomLine: ");
             }
         });
 
