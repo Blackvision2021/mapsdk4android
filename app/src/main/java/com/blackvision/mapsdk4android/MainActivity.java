@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
 //            String mMessage = GZipUtil.uncompressToString(s, GZipUtil.GZIP_ENCODE_UTF_8);
 
 
-            String mMessage = getFromAssets1("json(1).log");
+            String mMessage = getFromAssets1("json(2).log");
 
 
             //转bean
